@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 use App\Models\ReceiptStudent;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use App\Models\PaymentStudent;
 use Illuminate\Support\Facades\Hash;
 
 class ChildrenController extends Controller
@@ -94,12 +95,11 @@ class ChildrenController extends Controller
         }
 
         $receipt_students = ReceiptStudent::where('student_id',$id)->get();
-
         if ($receipt_students->isEmpty()) {
             toastr()->error('لا توجد مدفوعات لهذا الطالب');
             return redirect()->route('sons.fees');
         }
-        return view('pages.parents.Receipt.index', compact('receipt_students'));
+        return view('pages.parents.Receipt.index', compact('receipt_students','student'));
 
     }
 
