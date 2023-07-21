@@ -32,5 +32,6 @@ return [
     'Download' => 'Download',
     'delete' => 'Delete',
     'student_name'=>'Student Name',
+    'Student_Edit'=>'Edit Student Informations',
 
 ];

@@ -47,7 +47,7 @@
                 <div class="clearfix"></div>
             </a>
             <ul id="Onlineclasses-icon" class="collapse" data-parent="#sidebarnav">
-                <li> <a href="{{route('online_zoom_classes.index')}}">حصص اونلاين مع زوم</a> </li>
+                <li> <a href="{{route('online_zoom_classes.index')}}">حصص اونلاين </a> </li>
             </ul>
         </li>
 
@@ -63,7 +63,7 @@
             </a>
             <ul id="sections-menu1" class="collapse" data-parent="#sidebarnav">
                 <li><a href="{{route('attendance.report')}}">تقرير الحضور والغياب</a></li>
-                <li><a href="#">تقرير الامتحانات</a></li>
+                {{-- <li><a href="#">تقرير الامتحانات</a></li> --}}
             </ul>
 
         </li>

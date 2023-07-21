@@ -51,7 +51,30 @@
             </ul>
         </li>
 
-
+ <!-- Teachers-->
+ <li>
+    <a href="javascript:void(0);" data-toggle="collapse" data-target="#Teachers-menu">
+        <div class="pull-left"><i class="fas fa-chalkboard-teacher"></i></i><span
+                class="right-nav-text">{{trans('main_trans.Teachers')}}</span></div>
+        <div class="pull-right"><i class="ti-plus"></i></div>
+        <div class="clearfix"></div>
+    </a>
+    <ul id="Teachers-menu" class="collapse" data-parent="#sidebarnav">
+        <li> <a href="{{route('Teachers.index')}}">{{trans('main_trans.List_Teachers')}}</a> </li>
+    </ul>
+</li>
+        <!-- Parents-->
+        <li>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#Parents-menu">
+                <div class="pull-left"><i class="fas fa-user-tie"></i><span
+                        class="right-nav-text">{{trans('main_trans.Parents')}}</span></div>
+                <div class="pull-right"><i class="ti-plus"></i></div>
+                <div class="clearfix"></div>
+            </a>
+            <ul id="Parents-menu" class="collapse" data-parent="#sidebarnav">
+                <li> <a href="{{url('add_parent')}}">{{trans('main_trans.List_Parents')}}</a> </li>
+            </ul>
+        </li>
         <!-- students-->
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#students-menu"><i class="fas fa-user-graduate"></i>{{trans('main_trans.students')}}<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
@@ -81,36 +104,6 @@
                 </li>
             </ul>
         </li>
-
-
-
-        <!-- Teachers-->
-        <li>
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#Teachers-menu">
-                <div class="pull-left"><i class="fas fa-chalkboard-teacher"></i></i><span
-                        class="right-nav-text">{{trans('main_trans.Teachers')}}</span></div>
-                <div class="pull-right"><i class="ti-plus"></i></div>
-                <div class="clearfix"></div>
-            </a>
-            <ul id="Teachers-menu" class="collapse" data-parent="#sidebarnav">
-                <li> <a href="{{route('Teachers.index')}}">{{trans('main_trans.List_Teachers')}}</a> </li>
-            </ul>
-        </li>
-
-
-        <!-- Parents-->
-        <li>
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#Parents-menu">
-                <div class="pull-left"><i class="fas fa-user-tie"></i><span
-                        class="right-nav-text">{{trans('main_trans.Parents')}}</span></div>
-                <div class="pull-right"><i class="ti-plus"></i></div>
-                <div class="clearfix"></div>
-            </a>
-            <ul id="Parents-menu" class="collapse" data-parent="#sidebarnav">
-                <li> <a href="{{url('add_parent')}}">{{trans('main_trans.List_Parents')}}</a> </li>
-            </ul>
-        </li>
-
         <!-- Accounts-->
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#Accounts-menu">
@@ -122,12 +115,12 @@
             <ul id="Accounts-menu" class="collapse" data-parent="#sidebarnav">
                 <li> <a href="{{route('Fees.index')}}">{{trans('main_trans.fees')}}</a> </li>
                 <li> <a href="{{route('Fees_Invoices.index')}}">{{trans('main_trans.fees_invoices')}}</a> </li>
-                <li> <a href="{{route('receipt_students.index')}}">سندات القبض</a> </li>
-                <li> <a href="{{route('ProcessingFee.index')}}">استبعاد رسوم</a> </li>
-                <li> <a href="{{route('Payment_students.index')}}">سندت الصرف</a> </li>
+                <li> <a href="{{route('receipt_students.index')}}">{{trans('main_trans.received_fees')}}</a> </li>
+                <li> <a href="{{route('Payment_students.index')}}">{{trans('main_trans.disbursement_fees')}}</a> </li>
+                <li> <a href="{{route('ProcessingFee.index')}}">{{trans('main_trans.excluded_fees')}}</a> </li>
+                
             </ul>
         </li>
-
         <!-- Attendance-->
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#Attendance-icon">
@@ -139,7 +132,6 @@
                 <li> <a href="{{route('Attendance.index')}}">قائمة الطلاب</a> </li>
             </ul>
         </li>
-
         <!-- Subjects-->
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#Subjects">
@@ -151,7 +143,6 @@
                 <li> <a href="{{route('subjects.index')}}">{{trans('main_trans.subjects_list')}}</a> </li>
             </ul>
         </li>
-
         <!-- Quizzes-->
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#Exams-icon">
@@ -164,8 +155,6 @@
                 <li> <a href="{{route('questionss.index')}}">قائمة الاسئلة</a> </li>
             </ul>
         </li>
-
-
         <!-- library-->
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#library-icon">
@@ -177,8 +166,6 @@
                 <li> <a href="{{route('library.index')}}">قائمة الكتب</a> </li>
             </ul>
         </li>
-
-
         <!-- Online classes-->
         <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#Onlineclasses-icon">
@@ -187,19 +174,12 @@
                 <div class="clearfix"></div>
             </a>
             <ul id="Onlineclasses-icon" class="collapse" data-parent="#sidebarnav">
-                <li> <a href="{{route('online_classes.index')}}">حصص اونلاين مع زوم</a> </li>
+                <li> <a href="{{route('online_classes.index')}}">حصص اونلاين</a> </li>
             </ul>
         </li>
-
-
         <!-- Settings-->
         <li>
             <a href="{{route('settings.index')}}"><i class="fas fa-cogs"></i><span class="right-nav-text">{{trans('main_trans.Settings')}} </span></a>
         </li>
-
-
-
-       
-
     </ul>
 </div>

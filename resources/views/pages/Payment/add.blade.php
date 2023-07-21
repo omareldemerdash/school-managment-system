@@ -2,13 +2,13 @@
 @section('css')
     @toastr_css
 @section('title')
-    سند صرف
+    صرف رسوم 
 @stop
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
 @section('PageTitle')
-    سند صرف {{$student->name}}
+    صرف رسوم  {{$student->name}}
 @stop
 <!-- breadcrumb -->
 @endsection

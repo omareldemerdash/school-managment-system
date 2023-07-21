@@ -2,13 +2,13 @@
 @section('css')
     @toastr_css
 @section('title')
-    معالجات الرسوم الدراسية
+    الرسوم المستبعدة
 @stop
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
 @section('PageTitle')
-  معالجات الرسوم الدراسية
+  الرسوم المستبعدة
 @stop
 <!-- breadcrumb -->
 @endsection

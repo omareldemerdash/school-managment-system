@@ -2,13 +2,13 @@
 @section('css')
     @toastr_css
 @section('title')
-   سند قبض
+    قبض رسوم
 @stop
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
 @section('PageTitle')
-سند قبض {{$student->name}}
+ قبض رسوم {{$student->name}}
 @stop
 <!-- breadcrumb -->
 @endsection

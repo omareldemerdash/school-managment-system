@@ -33,7 +33,7 @@ class TeacherRepository implements TeacherRepositoryInterface{
             $Teachers->Address = $request->Address;
             $Teachers->save();
             toastr()->success(trans('messages.success'));
-            return redirect()->route('Teachers.create');
+            return redirect()->route('Teachers.index');
         }
         catch (Exception $e) {
             return redirect()->back()->with(['error' => $e->getMessage()]);

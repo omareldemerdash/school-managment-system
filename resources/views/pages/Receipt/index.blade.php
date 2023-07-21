@@ -2,13 +2,13 @@
 @section('css')
     @toastr_css
 @section('title')
-    سندات القبض
+{{trans('main_trans.received_fees')}}
 @stop
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
 @section('PageTitle')
-   سندات القبض
+{{trans('main_trans.received_fees')}}
 @stop
 <!-- breadcrumb -->
 @endsection

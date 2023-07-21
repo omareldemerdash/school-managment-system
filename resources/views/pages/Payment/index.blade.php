@@ -2,13 +2,13 @@
 @section('css')
     @toastr_css
 @section('title')
-    سندات الصرف
+{{trans('main_trans.disbursement_fees')}}
 @stop
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
 @section('PageTitle')
-   سندات الصرف
+{{trans('main_trans.disbursement_fees')}}
 @stop
 <!-- breadcrumb -->
 @endsection

@@ -32,6 +32,7 @@ return [
     'Download' => 'تحميل',
     'delete' => 'حذف',
     'student_name'=>'اسم الطالب',
+    'Student_Edit'=>'تعديل معلومات الطالب',
 
 
 

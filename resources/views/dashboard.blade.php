@@ -128,7 +128,7 @@
                                     </span>
                                 </div>
                                 <div class="float-right text-right">
-                                    <p class="card-text text-dark">{{ trans('main_trans.no_grades') }}</p>
+                                    <p class="card-text text-dark">{{ trans('main_trans.no_sections') }}</p>
                                     <h4>{{ \App\Models\Section::count() }}</h4>
                                 </div>
                             </div>

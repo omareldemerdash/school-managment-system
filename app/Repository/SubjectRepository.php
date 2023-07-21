@@ -35,14 +35,14 @@ class SubjectRepository implements SubjectRepositoryInterface
             $subjects->teacher_id = $request->teacher_id;
             $subjects->save();
             toastr()->success(trans('messages.success'));
-            return redirect()->route('subjects.create');
+            return redirect()->route('subjects.index');
         }
         catch (\Exception $e) {
             return redirect()->back()->with(['error' => $e->getMessage()]);
         }
     }
 
-
+    
     public function edit($id){
 
         $subject =Subject::findorfail($id);

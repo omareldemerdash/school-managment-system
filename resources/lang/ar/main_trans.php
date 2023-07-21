@@ -42,14 +42,18 @@ return [
     'exams'=> 'الاختبارات',
     'subjects_list' => 'قائمة المواد',
     'fees_invoices'=>'الفواتير',
+    'received_fees'=>'رسوم القبض',
+    'excluded_fees'=>'الرسوم المستبعدة',
+    'disbursement_fees'=>'رسوم الصرف',
     'show_informations'=>'عرض البيانات',
     'no_students'=>'عدد الطلاب',
     'no_teachers'=>'عدد المعلمين',
     'no_parents'=>'عدد اولياء الامور',
-    'no_grades'=>'عدد الفصول الدراسية',
+    'no_sections'=>'عدد الفصول الدراسية',
     'admin_dashboard'=>'لوحة تحكم الادمن',
     'latest_operations'=>'اخر العمليات على النظام',
     'no_data'=>'لا توجد بيانات',
+    
 
 
 

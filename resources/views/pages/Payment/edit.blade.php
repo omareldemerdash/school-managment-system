@@ -2,13 +2,13 @@
 @section('css')
     @toastr_css
 @section('title')
-  تعديل سند صرف
+  تعديل رسوم صرف
 @stop
 @endsection
 @section('page-header')
     <!-- breadcrumb -->
 @section('PageTitle')
-تعديل سند صرف : <label style="color: red">{{$payment_student->student->name}}</label>
+تعديل رسوم صرف : <label style="color: red">{{$payment_student->student->name}}</label>
 @stop
 <!-- breadcrumb -->
 @endsection

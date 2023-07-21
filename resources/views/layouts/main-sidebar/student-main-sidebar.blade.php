@@ -12,6 +12,11 @@
         <!-- menu title -->
         <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">{{trans('main_trans.Programname')}} </li>
 
+         <!-- profile-->
+         <li>
+            <a href="{{route('profile-student.index')}}"><i class="fas fa-id-card-alt"></i><span
+                    class="right-nav-text">الملف الشخصي</span></a>
+        </li>
 
         <!-- الامتحانات-->
         <li>
@@ -20,11 +25,12 @@
         </li>
 
 
-        <!-- Settings-->
-        <li>
-            <a href="{{route('profile-student.index')}}"><i class="fas fa-id-card-alt"></i><span
-                    class="right-nav-text">الملف الشخصي</span></a>
-        </li>
+       
 
+        <!-- online classes-->
+        <li>
+            <a href="{{route('student-online.index')}}"><i class="fas fa-id-card-alt"></i><span
+                    class="right-nav-text">حصص اونلاين</span></a>
+        </li>
     </ul>
 </div>
